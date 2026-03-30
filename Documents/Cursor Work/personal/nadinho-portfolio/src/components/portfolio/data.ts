@@ -1,6 +1,12 @@
 export const X_HANDLE = "NadinhoCrypto";
 export const X_URL = `https://x.com/${X_HANDLE}`;
 
+/** WhatsApp / group invite — short link resolves to join flow */
+export const CLASS_JOIN_URL = "https://t.co/rzKThSx2mi";
+
+export const STUDENT_HYPE =
+  "My current students are already shipping real websites and competing in the Starknet Bounty — the energy is unreal.";
+
 export const SKILLS = [
   "Vibe Coding (teaching it now)",
   "Full-stack development & shipping real products",
@@ -17,25 +23,44 @@ export type PortfolioProject = {
 
 export const PROJECTS: PortfolioProject[] = [
   {
+    name: "Ultimaspark",
+    description: "A full-featured education website — courses, structure, and polish end to end.",
+    href: "https://www.ultimaspark.com",
+    status: "Live",
+  },
+  {
+    name: "First Sons",
+    description: "Project site and web presence — built and shipped for the community.",
+    href: "https://www.firstsons.xyz",
+    status: "Live",
+  },
+  {
+    name: "CryptoVault",
+    description:
+      "Track, learn & grow your crypto portfolio — guides, trending coins, beginner-friendly flow.",
+    href: "https://crypto-portfolio-website.vercel.app/",
+    status: "Live",
+  },
+  {
     name: "Stake on ARC",
     description:
-      "A staking dApp on ARC Blockchain with a native token and smooth on-chain user flows.",
-    href: "https://stakeonarc.vercel.app",
-    status: "Live now",
+      "Staking and prediction on Arc — native token, live TVL vibes, and real on-chain flows.",
+    href: "https://stakeonarc.vercel.app/",
+    status: "Live",
   },
   {
-    name: "Project 02 (Placeholder)",
+    name: "VibeRisk",
     description:
-      "Next build in the lab. Day 1 bugs, day N shipped — sharing progress publicly.",
-    href: "#",
-    status: "Building",
+      "Crypto position & risk calculator plus journals — built for futures traders who want clarity.",
+    href: "https://viberisk.vercel.app/",
+    status: "Live",
   },
   {
-    name: "Project 03 (Placeholder)",
+    name: "OddsEdge",
     description:
-      "Another product idea I’m actively working on. Vibe coding in public — no fake perfection.",
-    href: "#",
-    status: "Cooking",
+      "Sports & crypto odds calculator — parlays, EV, and sharp tools without the fluff.",
+    href: "https://oddsedge-zeta.vercel.app/",
+    status: "Live",
   },
 ];
 
@@ -47,4 +72,3 @@ export const ABOUT_BIO =
 
 export const WHAT_I_DO_SUMMARY =
   "Teaching Vibe Coding for free, building real products, and shipping blockchain/crypto experiments the honest way.";
-

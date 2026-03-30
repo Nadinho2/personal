@@ -6,7 +6,12 @@ import Link from "next/link";
 import AmbientToggle from "./AmbientToggle";
 import ParticleBackground from "./ParticleBackground";
 import VibeBar from "./VibeBar";
-import { VIBE_LEVEL_LABEL, VIBE_LEVEL_PERCENT, X_URL } from "./data";
+import {
+  CLASS_JOIN_URL,
+  VIBE_LEVEL_LABEL,
+  VIBE_LEVEL_PERCENT,
+  X_URL,
+} from "./data";
 
 const AVATAR_URL =
   "https://pbs.twimg.com/profile_images/2031337481375739904/OntmOGx9.jpg";
@@ -35,15 +40,26 @@ export default function Hero() {
             keep it real, and grow in public.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Link
-              href={X_URL}
-              target="_blank"
-              className="rounded-full bg-cyan-400 px-5 py-2 text-sm font-semibold text-black transition hover:bg-cyan-300"
-            >
-              Follow on X
-            </Link>
-            <AmbientToggle />
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <div className="flex flex-wrap items-center gap-3">
+              <Link
+                href={X_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-cyan-300"
+              >
+                Follow on X
+              </Link>
+              <Link
+                href={CLASS_JOIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-[44px] items-center justify-center rounded-full border border-emerald-400/50 bg-emerald-500/15 px-5 py-2.5 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-500/25"
+              >
+                Join free class
+              </Link>
+              <AmbientToggle />
+            </div>
           </div>
         </div>
 
