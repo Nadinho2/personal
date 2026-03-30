@@ -52,7 +52,7 @@ export const PROJECTS: PortfolioProject[] = [
     name: "VibeRisk",
     description:
       "Crypto position & risk calculator plus journals — built for futures traders who want clarity.",
-    href: "https://viberisk.vercel.app/",
+    href: "https://viberisk-17i6.vercel.app/",
     status: "Live",
   },
   {
